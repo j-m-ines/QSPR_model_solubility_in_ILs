@@ -37,3 +37,4 @@ DOI
 - numpy: 1.16.4
 - re: 2.2.1
 - sklearn: 0.20.3
+- scipy: 1.3.0
