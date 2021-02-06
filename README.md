@@ -9,5 +9,6 @@ QSPR modeling using Multiclass Classification of solids temperature-dependent so
   - asjc
 
 **data folder:** 
+
 After curation and physico-chemical descriptors calculation, the dataset is composed of 938 datapoints.
 - **new_dataset_chemaxon_full.csv**
