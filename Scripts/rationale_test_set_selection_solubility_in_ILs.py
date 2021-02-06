@@ -4,7 +4,7 @@ from sklearn import metrics
 import re
 from scipy.spatial import distance
 
-#change to your directory
+#change path to your directory
 path1='Documents/SLE/new_modeling/new_dataset_chemaxon_full.txt'
 
 #read full dataset
@@ -129,13 +129,13 @@ duplicates_list = pd.DataFrame(
 euc_dist = distance.squareform(distance.pdist(data_dup_mod, metric='euclidean'))
 df_euc_dist = pd.DataFrame(euc_dist, index=duplicates_list['system'])
 
-#change to your directory
+#change path to your directory
 path2='/home/joao_ines/Documents/SLE/new_modeling/euc_dist_mod.csv'
 
 #write distance matrix into a file
 df_euc_dist.to_csv(path2, index=True, header=True)
 
-#change to your directory
+#change path to your directory
 path2 = '/home/joao_ines/Documents/SLE/new_modeling/euc_dist_mod.csv'
 
 #load data set for training + test set selection with KS algorithm
@@ -148,7 +148,7 @@ X = np.delete(X, 0, 1)
 #compute KS-algorithm
 Y = kenStone(X, round(179*0.8), precomputed=True)
 
-#change to your directory
+#change path to your directory
 path3='/home/joao_ines/Documents/SLE/new_modeling/kenStone_training_set_mod.txt'
 
 #write indexes of training set systems
@@ -156,7 +156,7 @@ writeKS(path4, Y, precomputed=True)
 
 number_systems = len(data_red_col.index.unique())
 
-#change to your directory
+#change path to your directory
 path4='Documents/SLE/new_modeling/kenStone_training_set_mod.txt'
 
 # get training and test set indexes
@@ -168,7 +168,7 @@ test_set_idx = list(set(total_set_idx) - set(tr_set_idx))
 training_data = data_red_col[data_red_col.index.isin(data_dup.iloc[tr_set_idx].index)]
 test_data = data_red_col[data_red_col.index.isin(data_dup.iloc[test_set_idx].index)]
 
-#change to your directory
+#change path to your directory
 path5='/home/joao_ines/Documents/SLE/new_modeling/training_data_all_desc_mod.csv'
 path6='/home/joao_ines/Documents/SLE/new_modeling/test_data_all_desc_mod.csv'
 
