@@ -32,8 +32,8 @@ Inês, João; Klimenko, Kyrylo; Aires-de-Sousa, João; Esperança, José; Carrer
 DOI
 
 ## Dependencies:
--python: 3.7
--pandas:
--numpy:
--re:
--sklearn: 
+- python: 3.7
+- pandas: 0.24.2
+- numpy: 1.16.4
+- re: 2.2.1
+- sklearn: 0.20.3
