@@ -20,6 +20,7 @@ João Miguel Inês (j.ines@fct.unl.pt)
 ## Credits:
 
 Associated Lab in Sustainable Chemistry (LAQV-REQUIMTE)
+
 NOVA University of Lisbon - Cheminformatics Lab
 
 ## Reference:
@@ -31,12 +32,8 @@ Inês, João; Klimenko, Kyrylo; Aires-de-Sousa, João; Esperança, José; Carrer
 DOI
 
 ## Dependencies:
-python 3.7
-
-pandas
-
-numpy
-
-re
-
-sklearn
+-python: 3.7
+-pandas:
+-numpy:
+-re:
+-sklearn: 
