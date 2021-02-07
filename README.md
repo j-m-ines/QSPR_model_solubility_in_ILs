@@ -5,7 +5,7 @@ QSPR modeling using Multiclass Classification of solids temperature-dependent so
 **Scripts folder:**
 - **rationale_test_set_selection_solubility_in_ILs.py**
   - Application of the Kennard-Stone algorithm to split the original dataset into training and test set.
-- **bazingas.py**
+- **MultiClass_Random_Forest_Solubility.py**
   - asjc
 
 **Data folder:**
