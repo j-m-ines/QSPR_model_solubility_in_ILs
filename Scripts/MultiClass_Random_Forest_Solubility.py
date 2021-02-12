@@ -76,7 +76,7 @@ train = training_data_scaled
 teste = test_data_scaled
 
 #class weight is used to punish over-represented classes
-class_weight = dict({0:0.9, 1:1.6, 2:2.8})
+class_weight = dict({0:0.9, 1:1.6, 2:2.9})
 
 #define RF parameters
 RF_model = RandomForestClassifier(bootstrap=True, class_weight=class_weight, criterion='gini',
